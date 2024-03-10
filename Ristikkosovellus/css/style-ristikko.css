@@ -1,0 +1,160 @@
+html {
+    background-color: #F9F1F0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.valikko {
+    background-color: #333;
+    color: #fff;
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+  
+.menu li {
+    padding: 20px;
+}
+  
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.menu li a:hover {
+    font-weight: bold;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    margin-left: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#sanalaatikko {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+#pystysanojenmuodostus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#pystysanojenmuodostus div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    width: 208px;
+    margin: 0.5em;
+}
+
+input {
+    width: 200px;
+    margin: 0.5em
+}
+
+#esikatselu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tähän {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    text-align: left;
+}
+
+#myCanvas {
+    padding: 0;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .valikko {
+        width: 100%; 
+        height: 50px; 
+        overflow: hidden; 
+    }
+
+    .menu {
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .menu li {
+        padding: 0 10px;
+    }
+    
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0.2em;
+        margin: 0.2em;
+        margin-top: 50px;
+    }
+    
+    input {
+        width: 40vw;
+        margin: 0.2em;
+    }
+
+    button {
+        width: 42vw;
+        margin: 0.2em;
+    }
+
+
+    #tähän {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:15px;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        align-items: center;
+        text-align: left;
+    }
+}

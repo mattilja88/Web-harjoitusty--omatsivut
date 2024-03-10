@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/style.css">
+    <title>Etusivu</title>
+</head>
+<body>
+    <div class="valikko">
+        <ul class="menu" id="menu">
+                <li><a href="./index.html">Etusivu</a></li>
+                <li><a href= "./Etsi_sana/index-sana.html">Sanasokkelo</a></li>
+                <li><a href= "./Ristikkosovellus/index-ristikko.html">Ristikko</a></li>
+                <li><a href= "./Ryhmäjako/index-ryhma.html">Ryhmäjako</a></li>
+        </ul>
+    </div>
+    <div class="linkit">
+        <ul class="footer" id="footer">
+                <li><h3>Linkkejä:</a></li>
+                <li><a href= "https://kertolaskupeli.web.app/">Kertolaskupeli</a></li>
+                <li><a href= "https://www.sanomapro.fi/">Sanomapro</a></li>
+                <li><a href= "https://outi.finna.fi/">OUTI-kirjasto</a></li>
+        </ul>
+    </div>
+    <div class = "main">
+        <h1>Tervetuloa!</h1>
+        <p>Näille nettisivuille kokoilen linkkejä ja omatekoisia sovelluksia, jotka voivat auttaa ensisijaisesti ala-asteen opettajan työssä.</p>
+        <p>Surffaaminen sovelluksessa alkaa tarkastamalla etusivulta säätiedot tältä päivältä ja kahdelta seuraavalta päivältä.</p>
+    </div>
+    <div class = "säähavainnot">
+        <div class = "tänään">
+            <h3 class = "pvm-tänään"></h3>
+            <span class = "säähavainnot-tänään"></span>
+        </div>
+        <div class = "huomenna">
+            <h3 class = "pvm-huomenna"></h3>
+            <span class = "säähavainnot-huomenna"></span>
+        </div>
+        <div class = "ylihuomenna">
+            <h3 class = "pvm-ylihuomenna"></h3>
+            <span class = "säähavainnot-ylihuomenna"></span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "js/functions.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,0 +1,204 @@
+:root{
+    --bg-color: #F3EAC0;
+    --text-color: #1E2640;
+    --tumma-korostus: #922C40;
+    --vaalea-korostus: #DC9750;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    background-color: #F9F1F0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.valikko {
+    background-color: #333;
+    color: #fff;
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+  
+.menu li {
+    padding: 20px;
+}
+  
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.menu li a:hover {
+    font-weight: bold;
+}
+
+form {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.yläsektio{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 33%;
+    min-width: 33%;
+}
+
+.yläsektio div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3em;
+}
+
+#valikko {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#valikko >* {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.keskiyläsektio{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 33%;
+    min-width: 33%;
+    margin: 0.3em;
+}
+
+.keskiyläsektio div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keskisektio{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    min-height: 33%;
+    min-width: 33%;
+    margin: 0.3em;
+}
+
+.alasektio{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    min-height: 33%;
+    min-width: 33%;
+    margin: 0.3em;
+}
+
+.jaetut_ryhmät{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+input{
+    width: 200px;
+    margin:0.3em
+}
+
+button {
+    padding: 1em;
+    width: 200px;
+    margin:0.3em
+}
+
+p {
+    margin-top: 2em;
+}
+
+.oppilaslista {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .valikko {
+        width: 100%; 
+        height: 50px; 
+        overflow: hidden; 
+    }
+
+    .menu {
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .menu li {
+        padding: 0 10px;
+    }
+
+    form {
+        margin-top:50px;
+        margin-left: 0;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+}

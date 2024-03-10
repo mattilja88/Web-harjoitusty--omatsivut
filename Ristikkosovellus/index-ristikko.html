@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/style-ristikko.css" rel = "stylesheet">
+    <title>Ristikko</title>
+</head>
+<body>
+    <div class="valikko">
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Etusivu</a></li>
+          <li><a href= "../Etsi_sana/index-sana.html">Sanasokkelo</a></li>
+          <li><a href= "../Ristikkosovellus/index-ristikko.html">Ristikko</a></li>
+          <li><a href= "../Ryhmäjako/index-ryhma.html">Ryhmäjako</a></li>
+        </ul>
+    </div>
+    <div id = "main">
+        <div>
+            <div id = "otskikko">
+                <h1>Luo oma ristikkosi</h1>
+            </div>
+            <div >
+                <h3>Kirjoita sana ja sen selitys</h3>
+                <div id = "sanalaatikko">
+                    <input id = "sana" type = "text" placeholder = "1.sana">
+                    <input id = "sanaselitys" type = "text" placeholder = "1. sanan selitys">
+                </div>
+            </div>  
+            <div id = "pystysanat_ehdolle">  
+                <output id = "kaikkisanat"></output>
+            </div>
+            <div id = "pystysanojenmuodostus">
+                <div>
+                    <button id = "muodosta_rivi">Muodosta rivi</button>
+                    <button id = "sekoita_ristikko">Sekoita ristikko uudestaan</button>
+                </div>
+                <output id = "pystysanat">Paina "muodosta rivi" ja valitse näistä pystysana:<br></output>
+            </div>
+            <div>
+                <p>Mistä sanasta tehdään pystysana?</p>
+            </div>
+            <div id = "valitsepystysanat">
+                <input id = "pystysana" placeholder = "valitse pystysana">
+                <button id = "ristikko">Esikatsele ristikkoa</button>
+            </div>
+            <div id = "esikatselu">
+                <p id = "tähän"></p>
+            </div>
+            <div id = "ristikonlautaus">
+                <button id = "tyhjäristikko">Valmista tyhjä ristikko</button>
+                <button id="downloadBtn">Lataa kuva</button>
+            </div>
+        </div>
+        <div id = "esikatselu">
+            <canvas id="myCanvas" width="0" height="0"></canvas>
+        </div>
+    </div>
+    <script type="module" src = "./js/functions-ristikko.js"></script>
+</body>
+</html>

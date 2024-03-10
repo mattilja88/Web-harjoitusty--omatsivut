@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = 'css/style-ryhma.css' rel = 'stylesheet'/>
+    <title>Ryhmäjako</title>
+</head>
+<body>
+    <div class="valikko">
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Etusivu</a></li>
+          <li><a href= "../Etsi_sana/index-sana.html">Sanasokkelo</a></li>
+          <li><a href= "../Ristikkosovellus/index-ristikko.html">Ristikko</a></li>
+          <li><a href= "../Ryhmäjako/index-ryhma.html">Ryhmäjako</a></li>
+        </ul>
+    </div>
+    <form>
+        <h1>Ryhmäjako</h1>
+        <div class = 'main'>
+            <div class = 'yläsektio'>
+                    <p>Valitse olemassa oleva luokka</p>
+                    <div id = "valikko"></div>
+                    <button type = "button" id = "lisaa_luokka">Lisää luokka</button>
+            </div>
+            <div class = 'keskiyläsektio'>
+                <div class = 'lisaa_oppilas_txt'>
+                    <p>Jos et valinnut valmista luokkaa, lisää tämän kautta käsin oppilaat</p>
+                </div>
+                <div class = 'lisaa_oppilas'>
+                    <input id = 'oppilas'>
+                </div>
+                <div class = 'lisaa_nappi'>
+                    <button type = 'button' id = 'lisaa_oppilas'>Lisää</button>
+                </div>
+                <div class = 'oppilaslista'>
+                    <output id = 'oppilaslista'></output>
+                </div>
+                <div>
+                    <p>Tallenna nimella luokka1, luokka2, jne., jotta luokka on palautettavissa. Tiedoston häviää, kun tyhjennät sivustodatan.</p>
+                    <input type = "text" class = "luokan-nimi">
+                    <button type = 'button' id = 'talleta-välimuistiin'>Tallenna</button>
+                </div>
+            </div>  
+            <div class = 'keskisektio'>
+                <div>
+                    <p>Minkä kokoiset ryhmät?</p>
+                </div>
+                <div class = 'ryhmäkoko'>
+                    <input id = 'ryhmakoko'>
+                </div>
+                <div class = 'arvo_nappi'>
+                    <button type = 'button' id = 'arvo'>Arvo ryhmät</button>
+                </div>
+                    <output id = 'jaetut_ryhmat'></output>
+                    <button type = 'button' id = 'tyhjennä'>Tyhjennä</button>
+
+            </div>
+        </div>
+    </form>
+    <script src = './functions-ryhma.js'></script>
+</body>
+</html>

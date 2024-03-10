@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/style-sana.css">
+    <title>etsi sanat</title>
+</head>
+<body>
+    <div class="valikko">
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Etusivu</a></li>
+          <li><a href= "../Etsi_sana/index-sana.html">Sanasokkelo</a></li>
+          <li><a href= "../Ristikkosovellus/index-ristikko.html">Ristikko</a></li>
+          <li><a href= "../Ryhmäjako/index-ryhma.html">Ryhmäjako</a></li>
+        </ul>
+    </div>
+    <div id ="main">
+        <h1>Sanasokkelo</h1>
+        <div id = "b">
+            <div id = "a">
+                <input id = "rivit" type = "number" placeholder ="rivien määrä">
+                <button id = "aseta-rivit">Aseta rivimäärä</button>
+                <output id = "rivittekstinä">Rivit: 0</output>
+            </div>
+            <div id = "a">
+                <input id = "sarakkeet" type = "number" placeholder ="sarakkeiden määrä">
+                <button id = "aseta-sarakkeet">Aseta sarakemäärä</button>
+                <output id = "sarakkeettekstinä">Sarakkeet: 0</output>
+            </div>
+        </div>
+        <div id = "a">
+            <input id = "sana" type = "text" placeholder = "anna sana">
+            <output id = "kaikkisanat">Tähän tulee kaikki sanat</output>
+        </div>  
+        <p>Valitse millainen ohjeteksti liitetään tehtävään:</p>
+        <div id = "radio-input">
+            <input type = "radio" id = "none" name = "avut" value = "0">
+            <label for = "none">Ei apuja sanojen hakuun</label><br>
+            <input type = "radio" id = "määrä" name = "avut" value = "1">
+            <label for = "määrä">Kerro montako sanaa löydettävänä</label><br> 
+            <input type = "radio" id = "nimet" name = "avut" value = "2">
+            <label for = "nimet">Listaa sanat nimeltä</label> 
+        </div>
+        <div id = "b">
+            <button id = "valmista">Tee sanat</button>
+            <output id = "saate">Tässä</output>
+            <button id="downloadBtn">Lataa kuva</button>
+        </div>  
+        <canvas id="myCanvas" width="0" height="0"></canvas>
+    </div>
+    <script type = "module" src = "./js/functions-sana.js"></script>
+</body>
+</html>
